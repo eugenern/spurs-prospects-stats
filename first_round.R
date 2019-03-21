@@ -3,22 +3,22 @@ fig <- image_graph(width = 1920, height = 1080, res = 96)
 
 # incomplete stats; will need updating
 lw.stats <-
-    c(21.5,
-      8.7,
+    c(21.6,
+      8.8,
       20.2,
       1.4,
-      4.1,
-      2.8,
-      3.4,
+      4.2,
+      2.7,
+      3.3,
       0.9,
-      3,
-      3.9,
+      3.1,
+      4,
       2.4,
       1.6,
       0.6,
       1.9,
-      2.5)
-lw.shooting <- c(42.9, 33.3, 80.6, 49.5)
+      2.4)
+lw.shooting <- c(43.3, 33.3, 80.9, 49.8)
 dw.stats <-
     c(25.7,
       9.2,
@@ -42,7 +42,7 @@ dm.shooting <- c(44.2, 15.6, 70.3, 49.4)
 
 player.names <-
     c(
-        'Lonnie Walker IV - G\nAge: 20 GP: 26 MPG: 27.2',
+        'Lonnie Walker IV - G\nAge: 20 GP: 27 MPG: 27.4',
         'Derrick White - G\nAge: 23 GP: 24 MPG: 28.2',
         'Dejounte Murray - G\nAge: 20 GP: 15 MPG: 35.1'
     )
@@ -129,3 +129,5 @@ dm <- image_scale(dm, 'x65')
 out <- image_composite(fig, lw, offset = '+833+84')
 out <- image_composite(out, dw, offset = '+831+157')
 out <- image_composite(out, dm, offset = '+834+229')
+
+image_write(out, path = 'first_round.png', format = 'png')

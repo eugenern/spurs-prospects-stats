@@ -3,8 +3,8 @@ fig <- image_graph(width = 1920, height = 1080, res = 96)
 
 # incomplete stats; will need updating
 cm.stats <-
-    c(18.4, 7.5, 15.4, 0.2, 1.1, 3.2, 5, 2.1, 7.6, 9.7, 2.6, 0.8, 2, 4, 3)
-cm.shooting <- c(48.5, 20, 64.8, 52.3)
+    c(18.5, 7.5, 15.4, 0.2, 1.1, 3.3, 5, 2.1, 7.7, 9.8, 2.8, 0.9, 2, 3.9, 3.1)
+cm.shooting <- c(48.6, 20, 66.3, 52.5)
 jb.stats <-
     c(20.1,
       8.6,
@@ -42,7 +42,7 @@ bf.shooting <- c(50.2, 45.9, 86.9, 63.2)
 
 player.names <-
     c(
-        'Chimezie Metu - F\nAge: 21 GP: 23 MPG: 27.7',
+        'Chimezie Metu - F\nAge: 21 GP: 24 MPG: 27.7',
         'Jaron Blossomgame - F\nAge: 24 GP: 50 MPG: 29.6',
         'Bryn Forbes - G\nAge: 23 GP: 19 MPG: 35.5'
     )
@@ -130,3 +130,5 @@ bf <- image_scale(bf, 'x65')
 out <- image_composite(fig, cm, offset = '+833+84')
 out <- image_composite(out, jb, offset = '+834+157')
 out <- image_composite(out, bf, offset = '+835+229')
+
+image_write(out, path = 'second_round_undrafted.png', format = 'png')
