@@ -79,7 +79,9 @@ shooting.matrix <-
         ncol = 4,
         dimnames = list(player.names, shooting.names)
     )
-dummy.matrix <- matrix(c(NA, NA, NA))
+# empty matrix to provide space between stats and shooting
+# values are max of all values across files to keep axes consistent
+dummy.matrix <- matrix(c(26.2, 26.2, 26.2))
 # before combining stats with shooting, downscale shooting values by 4
 m <- cbind(stats.matrix, dummy.matrix, shooting.matrix / 4)
 par(mar = c(4.1, 4.1, 4.1, 4.1))
@@ -87,7 +89,8 @@ bp <-
     barplot(
         m,
         beside = TRUE,
-        col = c('#00B2A9', '#EF426F', '#FF8200'),
+        col = ifelse(colnames(m)[col(m)] == '', 'white',
+                     c('#00B2A9', '#EF426F', '#FF8200')),
         legend = player.names,
         args.legend = list(
             x = 'top',
@@ -115,8 +118,7 @@ text(
     y = m,
     labels = actual.m,
     pos = 3,
-    cex = 0.7,
-    xpd = NA
+    cex = 0.7#, xpd = NA
 )
 
 dev.off()
