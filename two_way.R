@@ -3,26 +3,26 @@ fig <- image_graph(width = 1920, height = 1080, res = 96)
 
 # incomplete stats; will need updating
 de.stats <-
-    c(23.4, 9.6, 15, 0, 0.1, 4.2, 5.2, 2.8, 8.3, 11.1, 1.9, 0.6, 3.7, 2.7, 3.7)
-de.shooting <- c(64.1, 0, 80.5, 67.7)
+    c(23.5, 9.7, 14.9, 0, 0.1, 4.2, 5.2, 2.8, 8.2, 11, 1.9, 0.5, 3.6, 2.7, 3.7)
+de.shooting <- c(64.8, 0, 80.9, 68.3)
 # incomplete stats; will need updating
 bm.stats <-
-    c(15,
+    c(14.9,
       5.3,
       10.2,
       0.7,
-      1.8,
+      1.7,
       3.6,
       4.6,
-      4.5,
-      6.6,
-      11.1,
-      2.7,
+      4.4,
+      6.5,
+      11,
+      2.6,
       1.5,
-      0.8,
+      0.9,
       2.2,
-      3.5)
-bm.shooting <- c(52.3, 37.7, 78.6, 61.1)
+      3.6)
+bm.shooting <- c(52.4, 37.7, 78.3, 61.1)
 dh.stats <-
     c(26.2, 9.2, 19.3, 2.8, 7, 5, 5.9, 0.6, 5.1, 5.7, 4.9, 1.4, 0.5, 4, 2.5)
 dh.shooting <- c(47.5, 40.2, 84.5, 59.7)
@@ -46,8 +46,8 @@ mc.shooting <- c(50.8, 36.6, 79.1, 58)
 
 player.names <-
     c(
-        'Drew Eubanks - F\nAge: 22 GP: 31 MPG: 25.3',
-        'Ben Moore - F\nAge: 23 GP: 42 MPG: 29.6',
+        'Drew Eubanks - F\nAge: 22 GP: 32 MPG: 25',
+        'Ben Moore - F\nAge: 23 GP: 43 MPG: 29.4',
         'Darrun Hilliard - G/F\nAge: 25 GP: 36 MPG: 28.4',
         'Matt Costello - F\nAge: 24 GP: 30 MPG: 22'
     )

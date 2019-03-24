@@ -3,22 +3,8 @@ fig <- image_graph(width = 1920, height = 1080, res = 96)
 
 # incomplete stats; will need updating
 lw.stats <-
-    c(21.8,
-      8.8,
-      20.2,
-      1.5,
-      4.3,
-      2.7,
-      3.3,
-      0.9,
-      3,
-      3.9,
-      2.4,
-      1.5,
-      0.6,
-      1.9,
-      2.5)
-lw.shooting <- c(43.8, 34.4, 81.4, 50.5)
+    c(21.8, 8.8, 20, 1.5, 4.3, 2.7, 3.4, 0.9, 3, 3.8, 2.3, 1.5, 0.6, 1.9, 2.5)
+lw.shooting <- c(43.9, 35.8, 81.1, 50.8)
 dw.stats <-
     c(25.7,
       9.2,
@@ -42,7 +28,7 @@ dm.shooting <- c(44.2, 15.6, 70.3, 49.4)
 
 player.names <-
     c(
-        'Lonnie Walker IV - G\nAge: 20 GP: 28 MPG: 27.5',
+        'Lonnie Walker IV - G\nAge: 20 GP: 29 MPG: 27.3',
         'Derrick White - G\nAge: 23 GP: 24 MPG: 28.2',
         'Dejounte Murray - G\nAge: 20 GP: 15 MPG: 35.1'
     )
